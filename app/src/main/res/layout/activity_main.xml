@@ -20,14 +20,13 @@
         app:layout_constraintVertical_bias="0.13" />
 
 
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_60dp"
         android:layout_marginTop="@dimen/dimen_8dp"
-        android:text="@+string/stringValue4"
+        android:text="@string/Username"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText" />
@@ -38,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_60dp"
         android:layout_marginTop="@dimen/dimen_8dp"
-        android:text="@+string/password"
+        android:text="@string/Password"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText3" />
@@ -53,7 +52,7 @@
         android:layout_marginBottom="@dimen/dimen_8dp"
         android:autofillHints="@+string/email_userid"
         android:ems="10"
-        android:hint="@+string/email_userid"
+        android:hint="@string/EmailPrompt"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +69,7 @@
         android:layout_marginTop="@dimen/dimen_8dp"
         android:layout_marginEnd="@dimen/dimen_8dp"
         android:layout_marginBottom="@dimen/dimen_8dp"
-        android:text="@+string/stringValue6"
+        android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -84,9 +83,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_8dp"
         android:layout_marginTop="@dimen/dimen_36dp"
-        android:autofillHints="@+string/password"
+        android:autofillHints="@string/Password"
         android:ems="10"
-        android:hint="@+string/password"
+        android:hint="@string/Password"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />

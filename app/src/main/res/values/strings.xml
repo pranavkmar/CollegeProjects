@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LayoutDemo</string>
+	<string name="app_name">LayoutDemo</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="EmailPrompt">
+        Enter Email/UserID
+    </string>
+    <string name="submit"> Submit </string>
 </resources>
