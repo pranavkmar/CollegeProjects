@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     TextView textviewTP, textviewDP;
-    Button buttonDate;
+    Button buttonDate, buttonTime;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 textviewDP.setVisibility(View.VISIBLE);
                 DatePicker dP = findViewById(R.id.datepicker);
-                textviewDP.setText("Button Update :" + ((dP.getDayOfMonth())) + (String.valueOf(dP.getMonth())) + (String.valueOf(dP.getYear())));
+                textviewDP.setText("Button Update : " + ((dP.getDayOfMonth())) + " - " + (String.valueOf(dP.getMonth())) + " - " + (String.valueOf(dP.getYear())));
             }
         });
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                textviewDP.setText("DateChange Update: " + year + monthOfYear + dayOfMonth);
+                textviewDP.setText("DateChange Update: " + dayOfMonth + " - " + monthOfYear + " - " + year);
             }
         });
 
@@ -63,6 +63,15 @@ public class MainActivity extends AppCompatActivity {
                 textviewTP.setVisibility(View.VISIBLE);
                 textviewTP.setText("Time is : " + hourOfDay + minute); // set the current time in text view
 
+            }
+        });
+        buttonTime = (Button) findViewById(R.id.timebutton);
+        buttonTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textviewTP.setVisibility(View.VISIBLE);
+                TimePicker tPicker = findViewById(R.id.timepickerview);
+                textviewTP.setText("Button Update :" + tPicker.getHour() + " : " + tPicker.getMinute());
             }
         });
 
