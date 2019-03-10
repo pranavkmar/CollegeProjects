@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "569992316395",
+    "firebase_url": "https://datetimepickerdemo-bef6a.firebaseio.com",
+    "project_id": "datetimepickerdemo-bef6a",
+    "storage_bucket": "datetimepickerdemo-bef6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569992316395:android:89a2f6b0a3b6c227",
+        "android_client_info": {
+          "package_name": "com.informbytes.datetimepicker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569992316395-l3jqfoa8r8963cu4nan6fc6ru4tiisnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.informbytes.datetimepicker",
+            "certificate_hash": "c9108935362aef417c2201198149f03b44741146"
+          }
+        },
+        {
+          "client_id": "569992316395-s3sblm8a5q0bej2d1pm2kogfbje7uadb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHttAE-RjHVfDX_vIqOWkGfFrA5dBUkWc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569992316395-s3sblm8a5q0bej2d1pm2kogfbje7uadb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

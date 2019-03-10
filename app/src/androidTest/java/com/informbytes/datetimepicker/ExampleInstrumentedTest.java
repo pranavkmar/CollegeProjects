@@ -1,4 +1,4 @@
-package com.example.datetimepicker;
+package com.informbytes.datetimepicker;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.datetimepicker", appContext.getPackageName());
+        assertEquals("com.informbytes.datetimepicker", appContext.getPackageName());
     }
 }

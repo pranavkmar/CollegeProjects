@@ -1,4 +1,4 @@
-package com.example.datetimepicker;
+package com.informbytes.datetimepicker;
 
 import org.junit.Test;
 
