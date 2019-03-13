@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 textviewDP.setVisibility(View.VISIBLE);
                 DatePicker dP = findViewById(R.id.datepicker);
-                textviewDP.setText("Button Update : " + ((dP.getDayOfMonth())) + " - " + (String.valueOf(dP.getMonth())) + " - " + (String.valueOf(dP.getYear())));
+                textviewDP.setText("Button Update : " + ((dP.getDayOfMonth())) + " - " + (dP.getMonth()+1) + " - " + (String.valueOf(dP.getYear())));
             }
         });
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
 
-                textviewDP.setText("DateChange Update: " + dayOfMonth + " - " + monthOfYear + " - " + year);
+                textviewDP.setText("DateChange Update: " + dayOfMonth + " - " + (monthOfYear+1) + " - " + year);
             }
         });
 
@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
                 // display a toast with changed values of time picker
-                Toast.makeText(getApplicationContext(), hourOfDay + "  " + minute, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), hourOfDay + " : " + minute, Toast.LENGTH_SHORT).show();
                 textviewTP.setVisibility(View.VISIBLE);
-                textviewTP.setText("Time is : " + hourOfDay + minute); // set the current time in text view
+                textviewTP.setText("Time is : " + hourOfDay + " : "+minute); // set the current time in text view
 
             }
         });
